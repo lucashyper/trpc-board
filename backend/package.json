@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "ts-node test.ts",
+    "gen": "ts-node gen.ts",
+    "prepare": "ts-patch install -s"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
+    "@ts-type-explorer/api": "file:../ts-type-explorer-main/packages/api",
+    "superjson": "^1.13.1",
+    "ts-patch": "^3.0.2",
+    "tst-reflect": "^0.12.0",
+    "tst-reflect-transformer": "^1.0.0-alpha.11",
+    "typescript": "^5.1.6",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "nodemon": "^3.0.1",
+    "ts-morph": "^19.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
